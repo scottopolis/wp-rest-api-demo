@@ -19,7 +19,7 @@ var app = {
 			      $('ul.topcoat-list').append('<li class="topcoat-list__item">' +
 			      	'<img src="'+value.featured_image.attachment_meta.sizes.medium.url+'" /><br>' +
 			      	'<h3>'+value.title+'</h3>' +
-			      	value.excerpt + '</li>');
+			      	'<p>'+value.excerpt+'</p></li>');
 			    });
 			},
 			error: function(error){
