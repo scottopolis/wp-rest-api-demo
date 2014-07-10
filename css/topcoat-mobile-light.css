@@ -23,12 +23,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
-/*.topcoat-icon--menu-stack {
-  background: url("../img/hamburger_dark.svg") no-repeat;
+.topcoat-icon--menu-stack {
+  background: url("../images/hamburger_dark.svg") no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-}*/
+}
 
 .quarter {
   width: 25%;
