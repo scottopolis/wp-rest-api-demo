@@ -12,9 +12,30 @@
   </head>
   <body>
 
+<div class="app js-app">
+    <!--Hidden menu-->
+
+    <div class="app-menu">
+
+        <div class="topcoat-list">
+          <h3 class="topcoat-list__header">Category</h3>
+          <ul class="topcoat-list__container">
+            <li class="topcoat-list__item">
+              <a href="#">Home</a>
+            </li>
+            <li class="topcoat-list__item">
+              <a href="#sample">Static Page</a>
+            </li>
+          </ul>
+        </div>
+
+    </div>
+
+    <div class="app-container js-app-container">
+
     <div class="topcoat-navigation-bar">
         <div class="topcoat-navigation-bar__item left quarter">
-            <a class="topcoat-icon-button--quiet">
+            <a class="topcoat-icon-button--quiet js-menu-button">
               <span class="topcoat-icon topcoat-icon--menu-stack"></span>
             </a>
         </div>
@@ -29,11 +50,15 @@
     </div>
 
     <div id="container"></div>
+
+</div><!-- .app -->
     
     <!-- When in Phonegap folder uncomment this
     <script type="text/javascript" src="phonegap.js"></script>  -->
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
     <script type="text/javascript" src="js/pageslider.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
 </html>

@@ -1,7 +1,126 @@
 .page {
-    text-align: left;
+  text-align: left;
 }
 
-.single-post {
-	padding: 15px;
+.single-post, .static-page {
+  padding: 15px;
+}
+
+/** Panel Menu **/
+
+.app {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.app-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  border-left: 1px solid rgba(255,255,255,0.2);
+  overflow: hidden;
+  background-color: #dfe2e2;
+}
+
+.app-menu {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: scroll;
+}
+
+.js-menu-button {
+  position: relative;
+  top: 1px;
+}
+
+.slideIn {
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -o-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  -ms-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideIn;
+  -moz-animation-name: slideIn;
+  -o-animation-name: slideIn;
+  -ms-animation-name: slideIn;
+  animation-name: slideIn;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
+
+  100% {
+    -webkit-transform: translateX(75%);
+    -moz-transform: translateX(75%);
+    -o-transform: translateX(75%);
+    -ms-transform: translateX(75%);
+    transform: translateX(75%);
+  }
+}
+
+.slideOut {
+  -webkit-transform: translate3D(0, 0, 0);
+  -moz-transform: translate3D(0, 0, 0);
+  -o-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  -ms-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: slideOut;
+  -moz-animation-name: slideOut;
+  -o-animation-name: slideOut;
+  -ms-animation-name: slideOut;
+  animation-name: slideOut;
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    -webkit-transform: translateX(75%);
+    -moz-transform: translateX(75%);
+    -o-transform: translateX(75%);
+    -ms-transform: translateX(75%);
+    transform: translateX(75%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -o-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
+  }
 }
